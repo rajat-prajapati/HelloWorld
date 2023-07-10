@@ -1,0 +1,36 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps 
+            {
+                    echo 'Hello, Starting pipeline execution...'
+            }
+        }
+        stage('Build') {
+            steps 
+            {
+                    echo 'Test code build started...'
+            }
+        }
+        stage('Deploy') {
+            steps 
+            {
+                    echo 'Deployment started on opcoreauto1...'
+            }
+        }
+        stage('Test') {
+            steps 
+            {
+                    echo 'Test run started....'
+            }
+        }
+        stage('Release') {
+            steps 
+            {
+                    echo 'Release started....'
+            }
+        }
+    }
+}
